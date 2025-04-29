@@ -1,61 +1,20 @@
-# Data files - never commit raw data to version control
-.history
-/data/
-*.csv
-*.xlsx
-*.json
-*.db
-*.sqlite
+# Alt Mobility Data Analysis Assignment
 
-# IDE and editor files
-.idea/
-.vscode/
-*.swp
-*.swo
-*.code-workspace
+## Project Structure
+- `sql_queries/`: Contains all SQL scripts for analysis
+- `visualizations/`: Output charts and BI files
+- `data/`: Original datasets (not version controlled)
+- `scripts/`: Database setup scripts
 
-# Environment files
-.env
-*.env
-venv/
-.env.local
-.env.development
-.env.test
-.env.production
+## Setup Instructions
+1. Install Python dependencies: `pip install pandas sqlite3`
+2. Run database setup: `python scripts/setup_database.py`
+3. Execute SQL queries in your preferred SQL client
+4. View visualizations in the `visualizations/` folder
 
-# System files
-.DS_Store
-Thumbs.db
-
-# Python specific
-__pycache__/
-*.py[cod]
-*.egg-info/
-*.pyc
-*.pyo
-*.pyd
-
-# Jupyter Notebook
-.ipynb_checkpoints/
-
-# Power BI/Tableau cache files
-*.pbix.lock
-*.twb.lock
-*.hyper
-*.tde
-
-# Log files
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Dependency directories
-node_modules/
-bower_components/
-jspm_packages/
-
-# Build files
-build/
-dist/
-*.exe
+## Analysis Overview
+- Order and sales trends
+- Customer behavior patterns
+- Payment status analysis
+- Comprehensive order reporting
+- Customer retention visualization
